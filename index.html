@@ -588,7 +588,87 @@ input[type="range"]{width:100%;accent-color:var(--focus)}
 <tr><td class="f"><span class="m">f''(x)\gt 0\ \Rightarrow\ \cup,\qquad f''(x)\lt 0\ \Rightarrow\ \cap</span></td><td class="n">concavità verso l'alto o verso il basso; dove f″ cambia segno c'è un flesso</td></tr>
 <tr><td class="f"><span class="m">f(b)-f(a)=f'(c)\,(b-a)</span></td><td class="n">teorema di Lagrange: per qualche c tra a e b la tangente è parallela alla corda</td></tr>
 </tbody></table>
-<p class="note">Per uno studio di funzione completo: dominio, simmetrie, intersezioni con gli assi, segno, limiti agli estremi e asintoti, derivata prima (crescenza, massimi e minimi), derivata seconda (concavità e flessi). Poi confronta il risultato con la scheda Grafici.</p>
+<p class="note">Per mettere tutto insieme in uno studio di funzione completo, vedi la sezione Studio di funzione qui sotto.</p>
+</div>
+</section>
+
+<section class="sec" id="s-studio">
+<h2>Studio di funzione</h2>
+<div class="sub"><h3>1. Dominio</h3>
+<table class="ft stack"><tbody>
+<tr><td class="f"><span class="m">\frac{A(x)}{B(x)}\ \Rightarrow\ B(x)\neq 0</span></td><td class="n">il denominatore non si annulla</td></tr>
+<tr><td class="f"><span class="m">\sqrt[n]{A(x)},\ n\ \text{pari}\ \Rightarrow\ A(x)\geq 0</span></td><td class="n">con n dispari va bene ogni x</td></tr>
+<tr><td class="f"><span class="m">\log_a A(x)\ \Rightarrow\ A(x)\gt 0</span></td><td class="n">l'argomento del logaritmo è positivo</td></tr>
+<tr><td class="f"><span class="m">\tg A(x)\ \Rightarrow\ A(x)\neq\frac{\pi}{2}+k\pi</span></td><td class="n"></td></tr>
+<tr><td class="f"><span class="m">\arcsen A(x),\ \arccos A(x)\ \Rightarrow\ -1\leq A(x)\leq 1</span></td><td class="n"></td></tr>
+<tr><td class="f"><span class="m">A(x)^{B(x)}\ \Rightarrow\ A(x)\gt 0</span></td><td class="n">la base di un esponente variabile è positiva</td></tr>
+</tbody></table>
+<p class="note">Se ci sono più condizioni vanno rispettate tutte insieme: si mettono a sistema.</p>
+</div>
+
+<div class="sub"><h3>2. Simmetrie e periodicità</h3>
+<table class="ft stack"><tbody>
+<tr><td class="f"><span class="m">f(-x)=f(x)</span></td><td class="n">funzione pari: grafico simmetrico rispetto all'asse y, basta studiarla per x ≥ 0</td></tr>
+<tr><td class="f"><span class="m">f(-x)=-f(x)</span></td><td class="n">funzione dispari: grafico simmetrico rispetto all'origine</td></tr>
+<tr><td class="f"><span class="m">f(x+T)=f(x)</span></td><td class="n">funzione periodica di periodo T: basta studiarla su un solo periodo</td></tr>
+</tbody></table>
+<p class="note">Il dominio deve essere simmetrico, altrimenti la funzione non può essere né pari né dispari.</p>
+</div>
+
+<div class="sub"><h3>3. Intersezioni con gli assi</h3>
+<table class="ft stack"><tbody>
+<tr><td class="f"><span class="m">x=0\ \Rightarrow\ y=f(0)</span></td><td class="n">asse y: al massimo un punto, se 0 sta nel dominio</td></tr>
+<tr><td class="f"><span class="m">f(x)=0</span></td><td class="n">asse x: gli zeri della funzione, anche più di uno</td></tr>
+</tbody></table></div>
+
+<div class="sub"><h3>4. Segno</h3>
+<table class="ft stack"><tbody>
+<tr><td class="f"><span class="m">f(x)\gt 0</span></td><td class="n">dove il grafico sta sopra l'asse x; nel resto del dominio sta sotto</td></tr>
+</tbody></table>
+<p class="note">Per un prodotto o un quoziente studia il segno di ogni fattore e mettili in una tabella dei segni. Poi cancella sul piano le zone dove il grafico non può passare.</p>
+</div>
+
+<div class="sub"><h3>5. Limiti e asintoti</h3>
+<table class="ft stack"><tbody>
+<tr><td class="f"><span class="m">\lim_{x\to x_0^{\pm}}f(x)</span></td><td class="n">in ogni punto escluso dal dominio: se viene ±∞ c'è un asintoto verticale x = x₀</td></tr>
+<tr><td class="f"><span class="m">\lim_{x\to\pm\infty}f(x)</span></td><td class="n">se viene un numero l c'è un asintoto orizzontale y = l</td></tr>
+<tr><td class="f"><span class="m">m=\lim_{x\to\pm\infty}\frac{f(x)}{x},\qquad q=\lim_{x\to\pm\infty}\left[f(x)-mx\right]</span></td><td class="n">se il limite all'infinito è ±∞ cerca l'asintoto obliquo y = mx + q</td></tr>
+</tbody></table>
+<p class="note">Da una stessa parte (verso +∞ o verso −∞) non possono esserci insieme un asintoto orizzontale e uno obliquo.</p>
+</div>
+
+<div class="sub"><h3>6. Derivata prima: crescenza, massimi e minimi</h3>
+<table class="ft stack"><tbody>
+<tr><td class="f"><span class="m">f'(x)=0</span></td><td class="n">trova i punti stazionari</td></tr>
+<tr><td class="f"><span class="m">f'(x)\gt 0\ \Rightarrow\ \nearrow,\qquad f'(x)\lt 0\ \Rightarrow\ \searrow</span></td><td class="n">tabella dei segni della derivata</td></tr>
+<tr><td class="f"><span class="m">+\ \to\ -\ \Rightarrow\ \text{massimo},\qquad -\ \to\ +\ \Rightarrow\ \text{minimo}</span></td><td class="n">se f′ non cambia segno è un flesso orizzontale</td></tr>
+<tr><td class="f"><span class="m">f'(x_0^-)\neq f'(x_0^+)</span></td><td class="n">punto in cui f non è derivabile: angoloso se le derivate sono finite e diverse, cuspide se sono +∞ e −∞, flesso a tangente verticale se hanno lo stesso segno infinito</td></tr>
+</tbody></table>
+<p class="note">Calcola sempre f(x₀) per avere le coordinate del massimo o del minimo.</p>
+</div>
+
+<div class="sub"><h3>7. Derivata seconda: concavità e flessi</h3>
+<table class="ft stack"><tbody>
+<tr><td class="f"><span class="m">f''(x)\gt 0\ \Rightarrow\ \cup,\qquad f''(x)\lt 0\ \Rightarrow\ \cap</span></td><td class="n">concavità verso l'alto o verso il basso</td></tr>
+<tr><td class="f"><span class="m">f''(x_0)=0\ \text{e cambia segno}</span></td><td class="n">punto di flesso</td></tr>
+<tr><td class="f"><span class="m">f'(x_0)=0,\ f''(x_0)\gt 0\ \Rightarrow\ \text{minimo};\quad f''(x_0)\lt 0\ \Rightarrow\ \text{massimo}</span></td><td class="n">un altro modo per classificare i punti stazionari</td></tr>
+</tbody></table></div>
+
+<div class="sub"><h3>Esempio svolto</h3>
+<div class="lim"><div class="md">f(x)=\frac{x^2}{x-1}=x+1+\frac{1}{x-1}</div>
+<p>Scriverla in questa seconda forma (dividendo x² per x − 1) semplifica asintoto e derivate.</p></div>
+<table class="ft stack"><tbody>
+<tr><td class="f"><span class="m">x\neq 1</span></td><td class="n">dominio</td></tr>
+<tr><td class="f"><span class="m">f(-x)\neq\pm f(x)</span></td><td class="n">né pari né dispari</td></tr>
+<tr><td class="f"><span class="m">(0;\,0)</span></td><td class="n">unica intersezione con gli assi</td></tr>
+<tr><td class="f"><span class="m">f(x)\gt 0\iff x\gt 1</span></td><td class="n">il numeratore è sempre ≥ 0, decide il denominatore</td></tr>
+<tr><td class="f"><span class="m">\lim_{x\to 1^{\pm}}f(x)=\pm\infty</span></td><td class="n">asintoto verticale x = 1</td></tr>
+<tr><td class="f"><span class="m">m=1,\quad q=\lim_{x\to\pm\infty}\left(1+\frac{1}{x-1}\right)=1</span></td><td class="n">asintoto obliquo y = x + 1</td></tr>
+<tr><td class="f"><span class="m">f'(x)=1-\frac{1}{(x-1)^2}=\frac{x(x-2)}{(x-1)^2}</span></td><td class="n">si annulla in x = 0 e x = 2</td></tr>
+<tr><td class="f"><span class="m">\text{max}\ (0;\,0),\qquad \text{min}\ (2;\,4)</span></td><td class="n">f′ &gt; 0 per x &lt; 0 e per x &gt; 2</td></tr>
+<tr><td class="f"><span class="m">f''(x)=\frac{2}{(x-1)^3}</span></td><td class="n">∩ per x &lt; 1, ∪ per x &gt; 1; nessun flesso perché x = 1 non sta nel dominio</td></tr>
+</tbody></table>
+<p class="note">Controlla il risultato scrivendo <code>x^2/(x-1)</code> nella scheda Grafici: vedrai il massimo, il minimo e i due asintoti.</p>
 </div>
 </section>
 
